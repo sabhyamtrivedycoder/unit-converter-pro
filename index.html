@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OmniConvert — Universal Units Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><span>📐</span><h1>OmniConvert</h1></div>
+    <a href="https://sabhyamtrivedycoder.github.io/portfolio/" target="_blank" class="nav-portfolio">Portfolio ↗</a>
+  </header>
+  <main class="main">
+    <div class="card">
+      <div class="row">
+        <input type="number" id="fromVal" value="1024">
+        <select id="fromUnit">
+          <option value="MB">Megabytes (MB)</option>
+          <option value="GB">Gigabytes (GB)</option>
+          <option value="TB">Terabytes (TB)</option>
+        </select>
+      </div>
+      <div class="equals">=</div>
+      <div class="row">
+        <input type="text" id="toVal" readonly>
+        <select id="toUnit">
+          <option value="GB" selected>Gigabytes (GB)</option>
+          <option value="MB">Megabytes (MB)</option>
+          <option value="TB">Terabytes (TB)</option>
+        </select>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Engineered by <a href="https://github.com/sabhyamtrivedycoder" target="_blank">Sabhyam Trivedy</a> • MIT License</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
